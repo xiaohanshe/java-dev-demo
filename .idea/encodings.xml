@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://D:/development/apache-maven-3.6.3/resposity/org/springframework/boot/spring-boot-starter-parent/2.3.7.RELEASE/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/1-demo-freemarker/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/1-demo-freemarker/src/main/resources/doc/html转图片linux字体问题解决记录.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/2-demo-jetty/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/2-demo-jetty/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/3-demo-mybatis-plus/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/4-demo-redis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
