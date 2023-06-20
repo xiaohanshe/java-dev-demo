@@ -28,12 +28,12 @@ public class DemoController {
     public Object set() {
         // redisUtil.set("aaaa","adafasdf");
         // redisUtil.hset("1","2", Arrays.asList(1,2,3,4,5));
-        if (ObjUtil.isNotEmpty(redisUtil.lGet("1", 0, -1))) {
+        if (ObjUtil.isNotEmpty(redisUtil.listGet("1", 0, -1))) {
             redisUtil.del("1");
         }
         // 列表的添加
-        redisUtil.lSet("1", Arrays.asList("asdfasdf", "asdfwww1222", "323232"));
-        return redisUtil.lGet("1", 0, -1);
+        redisUtil.listSet("1", Arrays.asList("asdfasdf", "asdfwww1222", "323232"));
+        return redisUtil.listGet("1", 0, -1);
     }
 
     @GetMapping("/del")

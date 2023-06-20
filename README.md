@@ -1,11 +1,11 @@
 ## Java 开发实例
-- [x] FreeMarker
+- [x] FreeMarker 整合
 - [x] Jetty 简单整合
-- [x] Mybatis-plus
-- [x] Redis
+- [x] Mybatis-plus、PageHelper使用
+- [x] Redis 整合
 - [ ] starter 封装
 - [ ] Excel 操作： POI 和 EasyExcel
-- [ ] RabbitMq
+- [ ] RabbitMQ
 - [ ] Spring-AOP
 - [ ] flowable 流程引擎
 - [ ] logback 日志使用及配置
