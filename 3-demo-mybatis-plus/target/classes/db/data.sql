@@ -41,3 +41,6 @@ INSERT INTO gen_project_modify (id,project_name, project_code, project_package, 
 VALUES ('1','maku-boot', 'maku', 'net.maku', 'D:/makunet/maku-boot', 'baba-boot', 'baba', 'com.baba', '.git,.idea,target,logs', 'java,xml,yml,txt', now());
 INSERT INTO gen_project_modify (id,project_name, project_code, project_package, project_path, modify_project_name, modify_project_code, modify_project_package, exclusions, modify_suffix, create_time)
 VALUES ('2','maku-cloud', 'maku', 'net.maku', 'D:/makunet/maku-cloud', 'baba-cloud', 'baba', 'com.baba', '.git,.idea,target,logs', 'java,xml,yml,txt', now());
+
+insert into general_enum_test(  id ,name,db_type,url,driver)
+values ('1','mysql',1,'mysql_url','org.jdbc.mysql'),('2','pgsql',2,'pgsql','org.jdbc.mysql')

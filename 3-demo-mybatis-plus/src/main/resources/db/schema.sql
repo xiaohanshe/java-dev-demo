@@ -125,3 +125,12 @@ CREATE TABLE gen_test_student
     update_time TIMESTAMP,
     PRIMARY KEY (id)
 );
+
+create table general_enum_test(
+  id          varchar(50) NOT NULL,
+  name        varchar(50),
+  db_type         int,
+  url         varchar(50) NOT NULL,
+  driver         varchar(50) NOT NULL,
+  PRIMARY KEY (id)
+);

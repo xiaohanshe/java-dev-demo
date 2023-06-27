@@ -41,4 +41,23 @@ public class MybatisPlusConfig {
     public AutoWriteFieldValue autoWriteFieldValue() {
         return new AutoWriteFieldValue();
     }
+
+    /**
+     * 通用枚举-方式二：
+     * 配置
+     * mybatis-plus:
+     *     # 修改 mybatis 的 DefaultEnumTypeHandler
+     *     configuration:
+     *         default-enum-type-handler: com.baomidou.mybatisplus.core.handlers.MybatisEnumTypeHandler
+     */
+    // @Bean
+    // public MybatisPlusPropertiesCustomizer mybatisPlusPropertiesCustomizer() {
+    //     return properties -> {
+    //         GlobalConfig globalConfig = properties.getGlobalConfig();
+    //         globalConfig.setBanner(false);
+    //         MybatisConfiguration configuration = new MybatisConfiguration();
+    //         configuration.setDefaultEnumTypeHandler(MybatisEnumTypeHandler.class);
+    //         properties.setConfiguration(configuration);
+    //     };
+    // }
 }
