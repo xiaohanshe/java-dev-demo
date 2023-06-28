@@ -1,0 +1,58 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: dynamic-data-source-demo
+  # 数据源配置
+  datasource:
+    # 连接池
+    type: com.zaxxer.hikari.HikariDataSource
+    dynamic:
+      primary: master
+      # 设置严格模式,默认false不启动. 启动后在未匹配到指定数据源时候回抛出异常,不启动会使用默认数据源.
+      strict: false
+      datasource:
+#        master:
+#          # 连接地址
+#          url: jdbc:mysql://localhost:3306/blog?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=CTT&nullCatalogMeansCurrent=true
+#          username: root
+#          password: root
+#          driver-class-name: com.mysql.cj.jdbc.Driver
+        master:
+          # 连接地址
+          url: jdbc:h2:mem:test
+          username: sa
+          password: sa
+          driver-class-name: org.h2.Driver
+          init:
+            schema: classpath*:db/schema.sql
+            data: classpath*:db/data.sql
+  # 浏览器中开启控制台
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
+      path: /h2
+  # 对于时间的Json格式化
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    # 属性格式化策略： 小驼峰
+    property-naming-strategy: LOWER_CAMEL_CASE
+mybatis-plus:
+  global-config:
+    db-config:
+      # 主键生成策略
+      id-type: assign_uuid
+    banner: false
+  # XML 读取位置
+  mapper-locations: classpath*:mapper/*Mapper.xml
+  configuration:
+    # 驼峰映射
+    map-underscore-to-camel-case: true
+    # 修改 mybatis 的 DefaultEnumTypeHandler
+  #    default-enum-type-handler: com.baomidou.mybatisplus.core.handlers.MybatisEnumTypeHandler
+  # 类别名
+  type-aliases-package: org.example.**.entity
+

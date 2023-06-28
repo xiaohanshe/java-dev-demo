@@ -14,9 +14,9 @@ spring:
     driver-class-name: org.h2.Driver
     # 表结构
     schema: classpath*:db/schema.sql
+    data: classpath*:db/data.sql
     # 数据集
     platform: h2
-    data: classpath*:db/data.sql
   # 浏览器中开启控制台
   h2:
     console:

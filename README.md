@@ -13,3 +13,4 @@
 - [ ] ThreadPool 线程池使用
 - [ ] Docker 使用
 - [ ] Netty 是一个异步的、基于事件驱动的网络应用框架，用以开发高性能、高可用的网络io程序
+- [ ] SpringBootTest 单元测试的使用
