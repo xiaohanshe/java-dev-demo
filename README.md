@@ -3,6 +3,7 @@
 - [x] Jetty 简单整合
 - [x] Mybatis-plus、PageHelper使用
 - [x] Redis 整合
+- [x] dynamic-datasource 多数据源
 - [ ] starter 封装
 - [ ] Excel 操作： POI 和 EasyExcel
 - [ ] RabbitMQ
